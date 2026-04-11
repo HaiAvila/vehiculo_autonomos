@@ -1,8 +1,10 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: Vehículos Autónomos - QCar
+description: Documentación del laboratorio de percepción visual.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+# IMPORTANTE: Cambia "TU_USUARIO" por tu usuario real de GitHub
+url: "https://HaiAvila.github.io"
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+# IMPORTANTE: Cambia "NOMBRE_DEL_REPO" por el nombre exacto que le pusiste
+# a tu repositorio en GitHub (ej. /vehiculos-autonomos). ¡No borres la diagonal / !
+baseurl: "/vehiculo_autonomos"
