@@ -1,35 +1,43 @@
 ---
-title: Home
+title: Inicio
 layout: home
+nav_order: 1
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Laboratorio de Vehículos Autónomos: Percepción Visual en QCar
+{: .fs-9 }
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+Este repositorio documenta la implementación y análisis de sistemas de percepción visual y toma de decisiones en tiempo real utilizando la plataforma robótica **Quanser QCar**. El proyecto explora desde técnicas de visión por computadora clásica hasta modelos de aprendizaje profundo (Deep Learning) para navegación autónoma segura.
 
-More specifically, the created site:
+---
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+## Estado del Proyecto
+- **Desarrolladora:** Haili Ailin Ávila Ramírez
+- **Institución:** Universidad Iberoamericana
+- **Asignatura:** Vehículos Autónomos (Docente: Juan Camilo Tejada Orjuela)
+- **Fecha:** Primavera 2026
+- **Tecnologías clave:** Python, OpenCV, PyTorch (YOLO), Linux (NVIDIA Jetson TX2), Quanser APIs.
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+---
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+## Arquitectura General del Sistema
 
-To get started with creating a site, simply:
+El desarrollo de esta práctica se basa en el paradigma fundamental de la robótica autónoma: el ciclo de **Percepción, Decisión y Acción**.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+1. **Percepción:** Adquisición de datos del entorno mediante la cámara CSI frontal del QCar a 30 FPS.
+2. **Procesamiento:** Interpretación de los datos visuales. Se divide en dos enfoques comparativos:
+   - *Visión Clásica:* Segmentación en espacio HSV y filtrado morfológico.
+   - *Modelo Inteligente:* Inferencia en tiempo real utilizando redes neuronales convolucionales (YOLOv5n/YOLOv8n).
+3. **Decisión:** Máquina de estados jerárquica para priorizar maniobras (ej. Freno de emergencia vs. Evasión direccional).
+4. **Acción:** Transmisión de señales de control (Throttle y Steering) mediante PWM a los actuadores físicos del vehículo a través de la tarjeta HIL.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+---
 
-----
+## Organización de la Documentación
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+Navega por el menú lateral para explorar cada etapa del laboratorio:
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+* **[Introducción y Metodología](...):** Requisitos, hardware y configuración inicial.
+* **[Visión Clásica y Control](...):** Desarrollo del algoritmo HSV, calibración y máquina de estados.
+* **[Deep Learning con YOLO](...):** Implementación del modelo inteligente y análisis de inferencia.
+* **[Análisis y Discusión](...):** Validación experimental, resolución de preguntas y conclusiones generales.
