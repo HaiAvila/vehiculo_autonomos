@@ -318,7 +318,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
 ## 3. Demostración Experimental en Video
 
 A continuación se presenta el registro en video de las pruebas físicas en el laboratorio, donde se observa al QCar reaccionando en tiempo real a los estímulos visuales (Amarillo = Evasión Izquierda, Azul = Evasión Derecha).
@@ -327,7 +326,7 @@ A continuación se presenta el registro en video de las pruebas físicas en el l
   <iframe 
     width="700" 
     height="400" 
-    src="https://youtu.be/9yZMlZbk61E"
+    src="https://www.youtube.com/embed/9yZMlZbk61E"
     title="Pruebas de evasión autónoma QCar"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
