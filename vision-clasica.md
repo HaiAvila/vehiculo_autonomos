@@ -20,7 +20,7 @@ En entornos reales, la iluminación cambia drásticamente. Programar colores fij
 
 El algoritmo genera una Región de Interés (ROI) en el centro de la pantalla. Al presionar la barra espaciadora, escanea los píxeles dentro del recuadro, calcula los mínimos y máximos, y genera las matrices de tolerancia.
 
-![Herramienta de Calibración HSV]({{ "/assets/img/calibrar_HSV.png" | relative_url }})
+![Herramienta de Calibración HSV]({ assets/img/calibrar_HSV.png | relative_url })
 *Vista de la cámara del QCar ejecutando el recuadro de calibración (ROI).*
 
 ### Código: `calibrador_hsv.py`
