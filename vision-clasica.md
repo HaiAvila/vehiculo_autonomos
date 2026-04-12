@@ -48,11 +48,7 @@ def main():
             "upper": np.array([36, 255, 201], dtype=np.uint8),
             "bgr": (0, 255, 255)  # Amarillo en BGR
         },
-        "morado": {
-            "lower": np.array([99, 84, 1], dtype=np.uint8),
-            "upper": np.array([129, 204, 121], dtype=np.uint8),
-            "bgr": (255, 0, 255)  # Magenta/Morado en BGR
-        },
+        
         "azul": {
             "lower": np.array([91, 193, 20], dtype=np.uint8),
             "upper": np.array([122, 255, 140], dtype=np.uint8),
