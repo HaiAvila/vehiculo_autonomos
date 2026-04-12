@@ -16,7 +16,7 @@ Esta sección describe el marco teórico, los objetivos y la metodología experi
 El objetivo principal de esta práctica es implementar una prueba experimental de visión por computador en el QCar, empleando su cámara frontal, con el fin de detectar un estímulo visual en tiempo real y asociarlo con una acción de navegación segura.
 
 ### Objetivos Específicos
-1. Configurar la adquisición de imágenes desde la cámara frontal CSI utilizando la API oficial de Quanser[cite: 18].
+1. Configurar la adquisición de imágenes desde la cámara frontal CSI utilizando la API oficial de Quanser.
 2. Aplicar operaciones de preprocesamiento y segmentación de imágenes con OpenCV.
 3. Detectar visualmente un objeto o marcador de color en tiempo real.
 4. Diseñar una lógica de decisión para generar una respuesta de navegación y ejecutar un control seguro.
