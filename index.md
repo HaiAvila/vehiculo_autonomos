@@ -12,7 +12,7 @@ Este repositorio documenta la implementación y análisis de sistemas de percepc
 ---
 
 ## Estado del Proyecto
-- **Desarrolladora:** Haili Ailin Ávila Ramírez
+- **Desarrolladores:** Adrían Bazaldua, Sebastián Enguilo y Haili Ávila
 - **Institución:** Universidad Iberoamericana
 - **Asignatura:** Vehículos Autónomos (Docente: Juan Camilo Tejada Orjuela)
 - **Fecha:** Primavera 2026
