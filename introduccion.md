@@ -7,7 +7,8 @@ nav_order: 2
 # Introducción y Metodología
 {: .fs-9 }
 
-Esta sección describe el marco teórico, los objetivos y la metodología experimental aplicada para lograr la navegación autónoma básica del Quanser QCar mediante percepción visual.
+Marco teórico, objetivos y metodología experimental aplicada para lograr la navegación autónoma básica del Quanser QCar mediante percepción visual.
+{: .fs-6 .fw-300 }
 
 ---
 
@@ -16,6 +17,7 @@ Esta sección describe el marco teórico, los objetivos y la metodología experi
 El objetivo principal de esta práctica es implementar una prueba experimental de visión por computador en el QCar, empleando su cámara frontal, con el fin de detectar un estímulo visual en tiempo real y asociarlo con una acción de navegación segura.
 
 ### Objetivos Específicos
+
 1. Configurar la adquisición de imágenes desde la cámara frontal CSI utilizando la API oficial de Quanser.
 2. Aplicar operaciones de preprocesamiento y segmentación de imágenes con OpenCV.
 3. Detectar visualmente un objeto o marcador de color en tiempo real.
@@ -25,12 +27,13 @@ El objetivo principal de esta práctica es implementar una prueba experimental d
 
 ## Plataforma Experimental: Quanser QCar
 
-El desarrollo se llevó a cabo sobre la plataforma Quanser QCar, un vehículo a escala diseñado para la investigación y desarrollo en conducción autónoma. 
+El desarrollo se llevó a cabo sobre la plataforma Quanser QCar, un vehículo a escala diseñado para la investigación y desarrollo en conducción autónoma.
 
 ### Especificaciones de Hardware y Software
-* **Cámara Frontal:** Se utilizó la cámara frontal CSI, identificada en el sistema de captura como el dispositivo `3` (`video://localhost:3`).
-* **Procesamiento Embebido:** NVIDIA Jetson ejecutando un entorno Linux Ubuntu.
-* **Lenguaje y Librerías:** Python 3. Se emplearon las librerías `numpy` y `opencv-python` para el procesamiento de imágenes, junto con las APIs propietarias `quanser.multimedia` (para el flujo de video) y `quanser.hardware` (para la comunicación de bajo nivel con los motores).
+
+- **Cámara Frontal:** Se utilizó la cámara frontal CSI, identificada en el sistema de captura como el dispositivo `3` (`video://localhost:3`).
+- **Procesamiento Embebido:** NVIDIA Jetson ejecutando un entorno Linux Ubuntu.
+- **Lenguaje y Librerías:** Python 3. Se emplearon las librerías `numpy` y `opencv-python` para el procesamiento de imágenes, junto con las APIs propietarias `quanser.multimedia` (para el flujo de video) y `quanser.hardware` (para la comunicación de bajo nivel con los motores).
 
 ---
 
