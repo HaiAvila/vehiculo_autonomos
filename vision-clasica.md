@@ -1,7 +1,7 @@
 ---
 title: Visión Clásica y Control
 layout: default
-nav_order: 3
+nav_order: 4
 ---
 
 # Visión Clásica y Control
